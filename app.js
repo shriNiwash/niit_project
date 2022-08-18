@@ -27,5 +27,9 @@ app.get("/about",(req,res)=>{
     res.render('about');
 })
 
+app.get("/services",(req,res)=>{
+    res.render('service');
+})
+
 
 app.listen(PORT,()=>console.log(`localhost://${PORT}`));
