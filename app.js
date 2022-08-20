@@ -30,6 +30,9 @@ app.get("/about",(req,res)=>{
 app.get("/services",(req,res)=>{
     res.render('service');
 })
+app.get("/contact",(req,res)=>{
+    res.render('contact');
+})
 
 
 app.listen(PORT,()=>console.log(`localhost://${PORT}`));
