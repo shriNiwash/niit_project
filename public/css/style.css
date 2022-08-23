@@ -2369,4 +2369,60 @@ footer .credits {
   #shri{
     width: 100%;
   }
+  .titles{
+    text-align: center;
+  }
+}
+
+
+.middle{
+  background: #fff;
+}
+
+.titles{
+  padding-bottom: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.titles h2{
+  font-weight: 600;
+  font-size: 35px;
+  color: #232323;
+}
+
+.titles p{
+  color: #848484;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.borders{
+  height: 2px;
+    margin: 20px auto 20px;
+    position: relative;
+    width: 80px;
+    background: #28ABE3;
+}
+
+.middle .checkLists{
+  padding-left: 30px;
+  list-style: none;
+}
+
+.middle .checkLists li{
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #777;
+  font-family: "Source Sans Pro",sans-serif;
+}
+.image-content{
+  display: block;
+    max-width: 100%;
+    height: auto;
 }
