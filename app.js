@@ -34,5 +34,8 @@ app.get("/contact",(req,res)=>{
     res.render('contact');
 })
 
+app.get("/cards",(req,res)=>{
+    res.render('card');
+})
 
 app.listen(PORT,()=>console.log(`localhost://${PORT}`));
