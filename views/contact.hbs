@@ -244,7 +244,7 @@
           <div class="col-sm-12 section-t8">
             <div class="row">
               <div class="col-md-7">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <form  method="POST" action="/contact" >
                   <div class="row">
                     <div class="col-md-6 mb-3">
                       <div class="form-group">
@@ -263,19 +263,17 @@
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
-                        <textarea name="message" class="form-control" name="message" cols="45" rows="8" placeholder="Message" required></textarea>
+                        <textarea name="message"  class="form-control" name="message" cols="45" rows="8" placeholder="Message" required></textarea>
                       </div>
                     </div>
                     <div class="col-md-12 my-3">
-                      <div class="mb-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                      <div class="mb-3 align-content-center">
+                        <h3 id="myLoader" style="color: rgb(33, 94, 164);">{{loading}}</h3>
                       </div>
                     </div>
-
                     <div class="col-md-12 text-center">
-                      <button type="submit" class="btn btn-a">Send Message</button>
+                     <button type="submit"  class="btn btn-a" onclick="loading()">Send Message</button>
+
                     </div>
                   </div>
                 </form>
@@ -550,6 +548,7 @@
       </div>
     </div>
   </footer><!-- End  Footer -->
+
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
