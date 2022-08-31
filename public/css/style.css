@@ -1,9 +1,4 @@
-/**
-* Template Name: EstateAgency - v4.8.0
-* Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -11,6 +6,10 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #555555;
+}
+
+.fontfamily{
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 h1,
@@ -106,6 +105,12 @@ a:hover {
 }
 
 .text-brand {
+font-family: 'Courier New', Courier, monospace;
+ color:rgb(212, 207, 207);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.text-brand-nav {
   color: #000000;
   font-size: 2rem;
   font-weight: 600;
@@ -123,11 +128,17 @@ a:hover {
 }
 
 .color-b {
-  color: #2eca6a;
+  color:#00008B;
+  /* color:#008B8B; */
+  /* color:purple; */
+}
+.color-c{
+  color:white;
 }
 
 .color-d {
-  color: #adadad;
+  color:darkgrey;
+ 
 }
 
 .color-text-a {
@@ -137,6 +148,9 @@ a:hover {
 
 .no-margin {
   margin: 0;
+}
+.background{
+  background-color:#f2f2f2;
 }
 
 /*------/ Nav Pills  /------*/
@@ -261,7 +275,7 @@ a:hover {
 .icon-box .icon-box-icon {
   display: table-cell;
   vertical-align: top;
-  font-size: 36px;
+  font-size: 20px;
   color: #000000;
   width: 50px;
   padding-top: 8px;
@@ -322,9 +336,10 @@ a:hover {
 }
 
 .title-a {
+
   text-decoration: none;
   font-size: 2.6rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .title-link {
@@ -563,7 +578,7 @@ a:hover {
 
 .btn.btn-a,
 .btn.btn-b {
-  border-radius: 0;
+  border-radius: 10px;
   padding: 1rem 3rem;
   letter-spacing: 0.05rem;
 }
@@ -575,8 +590,8 @@ a:hover {
 }
 
 .btn.btn-a:hover {
-  background-color: #2eca6a;
-  color: #000000;
+  background-color:slategray;
+  color: white;
 }
 
 .btn.btn-b {
@@ -618,8 +633,8 @@ a:hover {
 .navbar-default {
   transition: all 0.5s ease-in-out;
   background-color: #ffffff;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
@@ -2179,8 +2194,9 @@ a:hover {
 # Footer
 --------------------------------------------------------------*/
 .section-footer {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-top: 60px;
-  background: #f3f3f3;
+  background-color: #000000;
 }
 
 .section-footer ul {
@@ -2188,6 +2204,7 @@ a:hover {
 }
 
 .section-footer .item-list-a i {
+  font-family:'Courier New', Courier, monospace;
   font-size: 18px;
   padding-right: 4px;
   color: #2eca6a;
@@ -2195,9 +2212,11 @@ a:hover {
 
 .section-footer .widget-a .w-title-a {
   margin-bottom: 1rem;
+  /* font-weight: 200; */
 }
 
 footer {
+
   background: #f3f3f3;
   text-align: center;
   padding: 30px 0;
@@ -2360,7 +2379,8 @@ footer .credits {
 
 .imag-section{
   padding: 100px 0;
-  background: url(../img/image.jpg);
+  background-image: url(../img/background.jpg);
+  /* background: rgba(8, 8, 8, 0.9); */
   background-size: cover;
   color: #fff;
 }
@@ -2380,6 +2400,17 @@ footer .credits {
 .btn-main{
   background: #28ABE3;
     border: 1px solid #28ABE3;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+.btn-main1{
+  background:teal;
+    /* border: 1px solid #28ABE3; */
     color: #fff;
     display: inline-block;
     font-size: 14px;
@@ -2434,9 +2465,10 @@ footer .credits {
   height: 2px;
     margin: 20px auto 20px;
     position: relative;
-    width: 80px;
-    background: #28ABE3;
+    width: 100px;
+    background:#00008B;
 }
+
 
 .middle .checkLists{
   padding-left: 30px;
@@ -2451,7 +2483,126 @@ footer .credits {
   font-family: "Source Sans Pro",sans-serif;
 }
 .image-content{
-  display: block;
+    display: block;
     max-width: 100%;
-    height: auto;
+    height: 20vw;
+    border-radius: 10px;
+    justify-content: center;
+  
+}
+.view{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.as {
+  font-family:'Courier New', Courier, monospace;
+  font-weight:800;
+  background:whitesmoke;
+  color:#555;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 10px 10px;
+  display:flex;
+  flex-direction: column;
+}
+.hello {
+  font-family:'Courier New', Courier, monospace;
+  font-weight:800;
+  color:#555;
+  font-size: 4vw;
+}
+.icon_image{
+  width:5vw;
+  height:5vw
+}
+.header{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:600;
+  font-size: 3rem;
+ 
+}
+
+.editing{
+  position: relative;
+  height:15vw
+}
+.editing1{
+  position:absolute;
+  top:12vw;
+  left:10px;
+}
+
+.backgoundeffect.scrolled{
+/* background-color:rgb(219, 202, 169); */
+background-image: linear-gradient(135deg, #fdfbfb 10%, #ebedee 100%);
+}
+.card{
+  height:25vw;
+}
+.card:hover{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  
+}
+.card-img-top{
+  transition: transform .5s; 
+}
+.card-img-top:hover{
+  transform: scale(0.95);
+}
+.backgoundeffect{
+  /* background-image: linear-gradient(-90deg, #a83279, #d38312); */
+  /* background-image: linear-gradient(135deg, #F97794 10%, #623AA2 100%); */
+  /* background-image: linear-gradient(135deg, #FFE985 10%, #FA742B 100%); */
+  /* background-image: linear-gradient(135deg, #E7A977 10%, #EBBE9B 100%); */
+  background-image: linear-gradient(135deg, #AFF1DA 10%, #F9EA8F 100%);
+}
+@media only screen and (max-width: 768px) {
+  .card{
+    height:50vw;
+  }
+  .as {
+    width: 20vw;
+    height: 20vw;
+  }
+  .image1 {
+    padding-top: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .g1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .hero {
+    display:none;
+  }
+  .icon_image{
+    width:10vw;
+    height:10vw
+  }
+  .view{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 9vw;
+  }
+  .image-content{
+width:80%;
+height:auto;
+  }
+  .carousel-image{
+    height: 170vw;
+  }
+  .carousel-caption{
+    display:none
+  }
+  
 }

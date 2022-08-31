@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>EstateAgency Bootstrap Template - Index</title>
+  <title>Web Solution Infotech</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -20,6 +20,9 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
@@ -29,12 +32,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
   <!-- counter cdn link ends here -->
 
-  <!-- =======================================================
-  * Template Name: EstateAgency - v4.8.0
-  * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  {{!-- aniamtion cdn links starts from here --}}
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  {{!-- aniamtion cdn links ends here --}}
+
+ 
 </head>
 
 <body>
@@ -42,7 +44,7 @@
 
 
   <!-- ======= Header/Navbar starts from here and edtiting done ======= -->
-  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top backgoundeffect mb-5">
     <div class="container">
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,28 +52,20 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="/agency">Estate<span class="color-b">Agency</span></a>
+      <a class="navbar-brand text-brand-nav" href="/agency">WebTech<span class="color-b">solutions</span></a>
 
-      <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+      <div class="navbar-collapse collapse justify-content-center ms-5  ps-5" id="navbarDefault">
         <ul class="navbar-nav ">
 
           <li class="nav-item">
-            <a class="nav-link active" href="/">Home</a>
+            <a class="nav-link " href="/">Home</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link " href="/about">About</a>
           </li>
 
-          {{!-- <li class="nav-item">
-            <a class="nav-link " href="property-grid.html">Property</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link " href="blog-grid.html">Blog</a>
-          </li> --}}
-
-          <li class="nav-item">
+         <li class="nav-item">
             <a class="nav-link services_burger" href="/cards">Servies</a>
           </li>
 
@@ -110,42 +104,94 @@
             <a class="nav-link " href="/contact">Contact</a>
           </li>
         </ul>
+         <btn class="btn btn-lg btn-success ms-md-5 ms-sm-0">
+          <a class="text-white" href="contact.html">Lets Talk</a>
+        </btn>
       </div>
     </div>
-  </nav><br /><br /><br /><br /><br /><br />
+  </nav>
 
-  <section class="middle">
-        <div class="container">
-            <div class="row">
-                <div class="titles text-center">
-                    <h2>We are Karna Web Solutions</h2>
-                    <p>Serving Brand throughout the world.</p>
-                    <div class="borders"></div>
-                </div>
-                <div class="col-md-6">
-                    <img src="img/computers.png" alt="computer photo" class="image-content">
-                </div>
-                <div class="col-md-6">
-                    <ul class="checkLists">
-                        <li><i class="fas fa-check" style="color: #28ABE3; margin-right:10px;"></i>"Fair strategic approaches"</li>
-                        <li><i class="fas fa-check" style="color: #28ABE3; margin-right:10px;"></i>"We persue the best techniques"</li>
-                        <li><i class="fas fa-check" style="color: #28ABE3; margin-right:10px;"></i>"Dedicated workforce enables to deliver great sevice"</li>
-                        <li><i class="fas fa-check" style="color: #28ABE3; margin-right:10px;"></i>"Completely protected site"</li>
-                    </ul>
-                    <a href="#" class="btn btn-main mt-20">Learn More</a>
-                </div>
+      <!-- **************carausal item starts here********* -->
+  <div
+        id="carouselExampleCaptions"
+        class="carousel slide mt-5"
+        data-bs-ride="carousel"
+      >
+    
+        <div class="carousel-inner">
+          <div class="carousel-item" data-aos="slide-left">
+            <img
+              src="img/nav3.jpg"
+              class="d-block w-100 carousel-image"
+              alt="..."
+              height="700vw"
+            />
+            <div class="carousel-caption  d-md-block d-sm-block image1 ">
+              <p style= "font-size:3vw; color: black" data-aos="fade-down">
+                Industry Experienced  Professional.
+              </p>
+              <button class="btn btn-dark btn-md-lg" data-aos="fade-up">Read More</button>
             </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/nav6.jpg"
+              class="d-block w-100 carousel-image"
+              alt="..."
+              height="700vw"
+            />
+            <div class="carousel-caption  d-md-block d-sm-block image1">
+              <p style= "font-size:3vw; color: black">
+                The Master Jack Of All Expertises.
+              </p>
+              <button class="btn btn-dark btn-md-lg">Read More</button>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="img/nav5.jpg"
+              class="d-block w-100 carousel-image"
+              alt="..."
+              height="700vw"
+            />
+            <div class="carousel-caption  d-md-block d-sm-block image1" data-aos="zoom-in">
+              <p style= "font-size:3vw ;color: black">Hi There! Welcome.</p>
+              {{!-- <button class="btn btn-dark btn-lg">Read More</button> --}}
+            </div>
+          </div>
         </div>
-    </section>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
 
-<section class="container">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  <!-- ****carauasel items ends here******************* -->
+
+{{!-- **********section below the carausal starst************* --}}
+<section class="container my-5 py-5 ">
     <div class="row section3">
       <div class="col-md-5">
-        <div>
-          <h2 style="font-weight: 600">Hello, Welcome To Web Solution</h2>
-          <h6 style="font-weight: 400">Helping Your Business Grow</h6>
+        <div data-aos="fade-left">
+          <h2 style="font-weight: 600" 
+          >Hello, Welcome To WebTech solution</h2>
+          <h6 style="font-weight: 400">Helping Your To Business Grow</h6>
           <p style="color: grey; font-size: 16px" class="my-5">
-            Web Solutions India is one of the fastest growing IT companies in Mumbai, serving clients across India and aboard. We broadly specialise in Software Development, Website-Designing and Digital Marketing solutions.
+            WebTechSolutions  is one of the fastest growing IT companies Worldwide, serving clients across India and aboard. We broadly specialise in Software Development, Website-Designing and Digital Marketing solutions.
             <br />
            </p>
           <button class="btn btn-dark btn-lg mb-3 mt-2">
@@ -156,7 +202,7 @@
 
 <!-- right side of the secion -->
 
-<div class="col-md-7 my-5 px-5 d-flex flex-column flex-sm-column flex-md-row text-center " >
+<div class="col-md-7 my-5 px-5 d-flex flex-column flex-sm-column flex-md-row text-center " data-aos="fade-right">
 <div class="col-md-3 col-sm-12">
     <div class="welcome-2 right-content-inner">
 <span>
@@ -202,16 +248,157 @@
   </section>
 {{!-- **********section to be added bolow the carausal ends here************** --}}
 
+{{!-- **********section We are Karna Web Solutions ends here************** --}}
+  <section class="middle">
+    <div class="background py-5"> 
+<div class="container">
+            <div class="row">
+                <div class="titles text-center">
+                    <h2>Why WebTechsolutions.</h2>
+                    <p>We Make Brand Throughout The World.</p>
+                    <div class="borders"></div>
+                </div>
+
+
+                <div class="view ">
+                    <div class="col-md-6 col-sm-12 " data-aos="fade-right">
+                    <img src="img/nav1.jpg" alt="computer photo" class="image-content">
+                    </div>
+                <div class="col-md-6 col-sm-12 my-5" data-aos="fade-left">
+                    <ul class="checkLists">
+                        <li><i class="fas fa-check" style="color: #28ABE3; margin-right:10px;"></i>"Fair strategic approaches"</li>
+                        <li><i class="fas fa-check" style="color: #28ABE3; margin-right:10px;"></i>"We persue the best techniques"</li>
+                        <li><i class="fas fa-check" style="color: #28ABE3; margin-right:10px;"></i>"Dedicated workforce enables to deliver great sevice"</li>
+                        <li><i class="fas fa-check" style="color: #28ABE3; margin-right:10px;"></i>"Completely protected site"</li>
+                    </ul>
+                    <a href="#" class="btn btn-success btn-lg my-2 mt-20 ms-5">Learn More</a>
+                </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+        
+    </section>
+{{!-- **********section  We are Karna Web Solutions ends here************** --}}
+
+{{!-- *************Let's Create Something Together  starts from here************* --}}
+     <section class="imag-section">
+        <div class="container my-5">
+            <div class="row justify-content-end editing">
+                <div class="col-md-12 text-md-end editing1">
+                    <h2>Let's Create Something Together</h2>
+                    <p>Take your business online and accelerate the 
+                        marketing with us.
+                    </p>
+                    <a href="#" class="btn btn-warning my-3 hero">Contact Us</a>
+                </div>
+            </div>
+        </div>
+      </section>
+   {{!-- *************Let's Create Something Together ends here************* --}}
+
+{{!-- /////////////new section introduced///////// --}}
+<div class="container" data-aos="zoom-out-down">
+     <div class="box col-lg-12 col-md-12 text-center">
+
+<h2 class="header my-5" class="">Web Technology  We Use</h2>
+<p class="titles fs-4" class="" >The master jack of all expertises</p>
+
+
+                <div class="row flex-wrap justify-content-center mb-5">
+                 
+                  <div class="as ">
+                    <div class="container justify-content-middle">
+                      <img src="img/php.svg" else="not found" class="my-3 icon_image" />
+                      <p class="hero">PHP</p>
+                    </div>
+                  </div>
+
+                  <div class="as ">
+                    <div class="container justify-content-middle">
+                      <img src="img/react.svg" else="not found" class="my-3 icon_image" />
+                      <p class="hero">React JS</p>
+                    </div>
+                  </div>
+
+                  <div class="as ">
+                    <div class="container justify-content-middle">
+                      <img src="img/net.svg" else="not found" class="my-3 icon_image" />
+                      <p class="hero">.NET </p>
+                    </div>
+                  </div>
+
+                  <div class="as ">
+                    <div class="container justify-content-middle">
+                      <img src="img/nodejs.svg" else="not found" class="my-3 icon_image" />
+                      <p class="hero">Node JS</p>
+                    </div>
+                  </div>
+
+                   <div class="as ">
+                    <div class="container justify-content-middle">
+                      <img src="img/laravel.svg" else="not found" class="my-3 icon_image" />
+                      <p class="hero">Laravel</p>
+                    </div>
+                  </div>
+
+
+                     <div class="as ">
+                    <div class="container justify-content-middle">
+                      <img src="img/html.svg" else="not found" class="my-3 icon_image" />
+                      <p class="hero">HTML 5</p>
+                    </div>
+                  </div>
+
+                    <div class="as ">
+                    <div class="container justify-content-middle">
+                      <img src="img/angular.svg" else="not found" class="my-3 icon_image" />
+                      <p class="hero">Angular</p>
+                    </div>
+                  </div>
+
+                  <div class="as ">
+                    <div class="container justify-content-middle">
+                      <img src="img/postgre sql.svg" else="not found" class="my-3 icon_image" />
+                      <p class="hero">PostgreSQL</p>
+                    </div>
+                  </div>
+
+                  <div class="as ">
+                    <div class="container justify-content-middle">
+                      <img src="img/mongodb.png" else="not found" class="my-3 icon_image" />
+                      <p class="hero">Mongo Db</p>
+                    </div>
+                  </div>
+
+                  <div class="as ">
+                    <div class="container justify-content-middle">
+                      <img src="img/mysql.svg" else="not found" class="my-3 icon_image" />
+                      <p class="hero">mySQL</p>
+                    </div>
+                  </div>
 
 
 
-   <!-- ======= work section starts here  ======= -->
-    <section class="section-news section-t8 my-5">
+                  
+                 
+                  
+                </div>
+              </div>
+</div>
+         
+{{!-- /////////////new section introduced///////// --}}
+
+
+
+   <!-- ======= work sect ion starts here  ======= -->
+    <section class="section-news section-t8 background p-5">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="title-wrap d-flex justify-content-between">
-              <div class="title-box">
+              <div class="title-box ">
                 <h2 class="title-a">Our Recent works</h2>
               </div>
               <div class="title-link">
@@ -230,7 +417,7 @@
             <div class="carousel-item-c swiper-slide ">
               <div class="card-box-b card-shadow news-box rounded-4">
                 <div class="img-box-b">
-                  <img src="img/post-2.jpg" alt="" class="img-b img-fluid">
+                  <img src="img/project3.jpg" alt=""  style="height:40vh" class="img-b img-fluid h-10">
                 </div>
                 <div class="card-overlay">
                   <div class="card-header-b">
@@ -239,7 +426,7 @@
                     </div> -->
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="#">E-Commerce Website</a>
+                        <a href="#">Food Delivery Website</a>
                           <!-- <br> new</a> -->
                       </h2>
                     </div>
@@ -255,7 +442,7 @@
             <div class="carousel-item-c swiper-slide">
               <div class="card-box-b card-shadow news-box rounded-4">
                 <div class="img-box-b">
-                  <img src="img/post-5.jpg" alt="" class="img-b img-fluid">
+                  <img src="img/project1.jpg" style="height:40vh" alt="" class="img-b img-fluid">
                 </div>
                 <div class="card-overlay">
                   <div class="card-header-b">
@@ -264,7 +451,7 @@
                     </div> -->
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="#">Food Delivery Website.</a>
+                        <a href="#">Ecucational Service Web.</a>
                           
                       </h2>
                     </div>
@@ -279,8 +466,8 @@
 
             <div class="carousel-item-c swiper-slide">
               <div class="card-box-b card-shadow news-box rounded-4">
-                <div class="img-box-b">
-                  <img src="img/post-7.jpg" alt="" class="img-b img-fluid">
+                <div class="img-box-b" style="height:40vh">
+                  <img src="img/project2.jpg" alt="" class="img-b img-fluid">
                 </div>
                 <div class="card-overlay">
                   <div class="card-header-b">
@@ -289,7 +476,7 @@
                     </div> -->
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="#">News Website.</a>
+                        <a href="#">E-Commerce Website</a>
                           <!-- <br> new</a> -->
                       </h2>
                     </div>
@@ -302,7 +489,7 @@
             </div>
             <!-- fourth carousel item -->
 
-            <div class="carousel-item-c swiper-slide">
+            {{!-- <div class="carousel-item-c swiper-slide">
               <div class="card-box-b card-shadow news-box rounded-4">
                 <div class="img-box-b">
                   <img src="img/post-3.jpg" alt="" class="img-b img-fluid">
@@ -324,50 +511,39 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> --}}
             </section>
 
-
-
-     <section class="imag-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Let's Create Something Together</h2>
-                    <p>Take your business online and accelerate the 
-                        marketing with us.
-                    </p>
-                    <a href="#" class="btn btn-main">Contact Us</a>
-                </div>
-            </div>
-        </div>
-      </section>
             <!-- work section finished
 
+
+
+
   <!-- ======= Footer   section  starts from here   and editing done  ======= -->
-  <section class="section-footer">
+  <section class="section-footer p-5">
     <div class="container">
       <div class="row">
 
         <div class="col-sm-12 col-md-3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h4 class="w-title-a text-brand">WEBSITE DESIGN AND DEVELOPMENT</h3>
+              <h6 class="w-title-a text-brand  color-c">WEBSITE DESIGN AND DEVELOPMENT</h6>
+          
             </div>
-            <div class="w-body-a">
-              <p class="w-text-a color-text-a">
+            <div class="w-body-a mx-2">
+              <p class="w-text-a color-d">
                 Website Designing
               </p>
-              <p class="w-text-a color-text-a">
+              <p class="w-text-a color-d">
                 Website Development
               </p>
-              <p class="w-text-a color-text-a">
+              <p class="w-text-a color-d">
                 E-Commerce Website
               </p>
-              <p class="w-text-a color-text-a">
+              <p class="w-text-a color-d">
                 MObile Website
               </p>
-              <p class="w-text-a color-text-a">
+              <p class="w-text-a color-d">
                 Application Development
               </p>
 
@@ -383,22 +559,23 @@
         <div class="col-sm-12 col-md-3 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h4 class="w-title-a text-brand">WEB SOLUTIONS</h4>
+              <h4 class="w-title-a text-brand color-c">WEB SOLUTIONS</h4>
+               
             </div>
             <div class="w-body-a">
               <div class="w-body-a">
                 <ul class="list-unstyled">
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Domain Registration</a>
+                  <li class="item-list-a ">
+                    <i class="bi bi-chevron-right"></i> <a href="#" class="color-d">Domain Registration</a>
                   </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Web Hosting</a>
+                  <li class="item-list-a ">
+                    <i class="bi bi-chevron-right "></i> <a href="#" class="color-d" >Web Hosting</a>
                   </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Online Backup</a>
+                  <li class="item-list-a ">
+                    <i class="bi bi-chevron-right"></i> <a href="#" class="color-d">Online Backup</a>
                   </li>
-                  <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Professional Emails</a>
+                  <li class="item-list-a ">
+                    <i class="bi bi-chevron-right"></i> <a href="#" class="color-d">Professional Emails</a>
                   </li>
 
 
@@ -414,19 +591,20 @@
         <div class="col-sm-12 col-md-3 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h4 class="w-title-a text-brand">QUICK LINKS</h4>
+              <h4 class="w-title-a text-brand color-c">QUICK LINKS</h4>
+             
             </div>
             <div class="w-body-a">
               <div class="w-body-a">
                 <ul class="list-unstyled">
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#" class="color-d">Privacy Policy</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Terms and conditions</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#" class="color-d">Terms and conditions</a>
                   </li>
                   <li class="item-list-a">
-                    <i class="bi bi-chevron-right"></i> <a href="#">Refund Policy</a>
+                    <i class="bi bi-chevron-right"></i> <a href="#" class="color-d">Refund Policy</a>
                   </li>
 
 
@@ -444,21 +622,22 @@
         <div class="col-sm-12 col-md-3 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h4 class="w-title-a text-brand">SUPPORT SOLUTIONS</h4>
+              <h4 class="w-title-a text-brand color-c">SUPPORT SOLUTIONS</h4>
+             
             </div>
             <div class="w-body-a">
               <ul class="list-unstyled">
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Email Recovery Solutions</a>
+                  <i class="bi bi-chevron-right"></i> <a href="#" class="color-d">Email Recovery Solutions</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Data Recovey Solutions</a>
+                  <i class="bi bi-chevron-right"></i> <a href="#" class="color-d">Data Recovey Solutions</a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Password Recovery Solutions </a>
+                  <i class="bi bi-chevron-right"></i> <a href="#"class="color-d">Password Recovery Solutions </a>
                 </li>
                 <li class="item-list-a">
-                  <i class="bi bi-chevron-right"></i> <a href="#">Software Solutions</a>
+                  <i class="bi bi-chevron-right"></i> <a href="#" class="color-d">Software Solutions</a>
                 </li>
 
               </ul>
@@ -471,8 +650,8 @@
     </div>
   </section>
   <footer>
-    <div class="container">
-      <div class="row">
+    <div class="container" data-aos="zoom-in-left">
+      <div class="row fontfamily">
         <div class="col-md-12">
           <h4 class="fw-bold">PAYMENT WE ACCEPT</h4><br />
           <img style="width: 100%;
@@ -521,18 +700,14 @@
             </p>
           </div>
           <div class="credits">
-            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
-          -->
+        
             Designed by <a href="https://niitbirgunj.edu.np/">Developed and Maintained by NIIT Birgunj</a>
           </div>
         </div>
       </div>
     </div>
   </footer><!-- End  Footer -->
+
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
@@ -549,10 +724,31 @@
  <script>
     $('.count').counterUp({
         delay:5,
-        time:1000
+        time:150
     })
     </script>
+    <script>
+      $(window).scroll(function(){
+        $('nav').toggleClass('scrolled',$(this).scrollTop()>50)
+      })
+    </script>
+    <script>
+ $('.carousel').carousel({
+    interval: 100
+});
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 
+  <script>
+    AOS.init({
+      duration:2000,
+      once:true,
+
+    });
+  </script>
+    
+   
 </body>
 
->>>>>>> aa1a72f40a0a37debb38b73e967cb96782e6c1a5
+
 </html>
